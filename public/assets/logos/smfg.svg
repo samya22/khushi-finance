@@ -1,0 +1,5 @@
+<svg viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="24" cy="30" r="9" fill="#00843d"/>
+      <circle cx="36" cy="30" r="9" fill="#0033a0"/>
+      <text x="65" y="38" font-family="system-ui, sans-serif" font-weight="800" font-size="16" fill="#0033a0">SMFG Credit</text>
+    </svg>

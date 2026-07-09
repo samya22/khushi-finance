@@ -1,0 +1,6 @@
+<svg viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+      <rect x="10" y="10" width="40" height="40" fill="#971c3d" rx="4"/>
+      <path d="M30 18 L39 36 H34.5 L30 27 L25.5 36 H21 Z" fill="#fff"/>
+      <circle cx="30" cy="33" r="2" fill="#fff"/>
+      <text x="65" y="38" font-family="system-ui, sans-serif" font-weight="800" font-size="18" fill="#971c3d">AXIS BANK</text>
+    </svg>

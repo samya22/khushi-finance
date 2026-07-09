@@ -1,0 +1,5 @@
+<svg viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="30" cy="33" r="8" fill="#f5ba13"/>
+      <path d="M18 35 C18 22, 42 22, 42 35 Z" fill="#7a1c1c"/>
+      <text x="65" y="38" font-family="system-ui, sans-serif" font-weight="800" font-size="14" fill="#7a1c1c">ADITYA BIRLA</text>
+    </svg>

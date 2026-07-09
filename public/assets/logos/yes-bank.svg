@@ -1,0 +1,5 @@
+<svg viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+      <path d="M15 15 H45 V35 C45 42, 30 47, 30 47 C 30 47, 15 42, 15 35 Z" fill="#0054a6"/>
+      <path d="M22 28 L28 34 L38 20" stroke="#e31b23" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <text x="65" y="38" font-family="system-ui, sans-serif" font-weight="800" font-size="18" fill="#0054a6">YES BANK</text>
+    </svg>

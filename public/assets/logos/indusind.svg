@@ -1,0 +1,5 @@
+<svg viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+      <path d="M15 20 L30 12 L45 20 L30 42 Z" fill="#9d0a0e"/>
+      <circle cx="30" cy="24" r="5" fill="#d4af37"/>
+      <text x="65" y="38" font-family="system-ui, sans-serif" font-weight="800" font-size="18" fill="#9d0a0e">IndusInd</text>
+    </svg>

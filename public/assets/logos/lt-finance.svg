@@ -1,0 +1,5 @@
+<svg viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="30" cy="30" r="18" fill="#ffcc00"/>
+      <text x="21" y="36" font-family="system-ui, sans-serif" font-weight="900" font-size="16" fill="#000">L&amp;T</text>
+      <text x="65" y="38" font-family="system-ui, sans-serif" font-weight="800" font-size="16" fill="#000">L&amp;T Finance</text>
+    </svg>
