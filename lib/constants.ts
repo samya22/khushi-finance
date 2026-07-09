@@ -23,10 +23,12 @@ export const LOAN_TYPES = [
   "Personal Loan",
   "Business Loan",
   "Education Loan",
-  "Car Loan",
+  "New Car Loan",
+  "Used Car Loan",
   "Loan Against Property",
   "MSME Loan",
   "Working Capital",
+  "Machinery Loan",
   "Other",
 ] as const;
 export type LoanType = (typeof LOAN_TYPES)[number];

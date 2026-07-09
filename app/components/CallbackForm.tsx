@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { getLoanTypeNames } from "@/lib/loanData";
 
 interface CallbackFormProps {
   defaultLoanType?: string;
@@ -214,14 +215,9 @@ export default function CallbackForm({ defaultLoanType = "Home Loan", isDetailed
                   value={loanType}
                   onChange={(e) => setLoanType(e.target.value)}
                 >
-                  <option value="Home Loan">Home Loan</option>
-                  <option value="Personal Loan">Personal Loan</option>
-                  <option value="Business Loan">Business Loan</option>
-                  <option value="Education Loan">Education Loan</option>
-                  <option value="Car Loan">Car Loan</option>
-                  <option value="Loan Against Property">Loan Against Property (LAP)</option>
-                  <option value="MSME Loan">MSME Loan</option>
-                  <option value="Working Capital">Working Capital CC/OD</option>
+                  {getLoanTypeNames().map((name) => (
+                    <option key={name} value={name}>{name}</option>
+                  ))}
                 </select>
               </div>
 
@@ -250,14 +246,9 @@ export default function CallbackForm({ defaultLoanType = "Home Loan", isDetailed
               value={loanType}
               onChange={(e) => setLoanType(e.target.value)}
             >
-              <option value="Home Loan">Home Loan</option>
-              <option value="Personal Loan">Personal Loan</option>
-              <option value="Business Loan">Business Loan</option>
-              <option value="Education Loan">Education Loan</option>
-              <option value="Car Loan">Car Loan</option>
-              <option value="Loan Against Property">Loan Against Property (LAP)</option>
-              <option value="MSME Loan">MSME Loan</option>
-              <option value="Working Capital">Working Capital CC/OD</option>
+              {getLoanTypeNames().map((name) => (
+                <option key={name} value={name}>{name}</option>
+              ))}
             </select>
           </div>
         )}

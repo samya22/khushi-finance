@@ -2,50 +2,10 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Accordion from "./components/Accordion";
+import { getPreviewLoans } from "@/lib/loanData";
 
 export default function Home() {
-  const previewProducts = [
-    {
-      slug: "home-loan",
-      title: "Home Loan",
-      description: "Finance your dream home or buy a plot of land with low interest options.",
-      href: "/loans/home-loan",
-      rate: "Starts 7.15% p.a.",
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-landmark"><line x1="3" x2="21" y1="22" y2="22" /><line x1="6" x2="6" y1="18" y2="11" /><line x1="10" x2="10" y1="18" y2="11" /><line x1="14" x2="14" y1="18" y2="11" /><line x1="18" x2="18" y1="18" y2="11" /><path d="m12 2-9 5h18Z" /></svg>
-      )
-    },
-    {
-      slug: "personal-loan",
-      title: "Personal Loan",
-      description: "Immediate cash funds for medical needs, marriage, or personal purchases.",
-      href: "/loans/personal-loan",
-      rate: "Starts 9.99% p.a. (Subjective Cibil)",
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-user"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" /><circle cx="12" cy="7" r="4" /></svg>
-      )
-    },
-    {
-      slug: "business-loan",
-      title: "Business Loan",
-      description: "Expand your company's potential, buy inventory, or machinery.",
-      href: "/loans/business-loan",
-      rate: "Starts 15% p.a.",
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-briefcase"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" /><rect width="20" height="14" x="2" y="6" rx="2" /></svg>
-      )
-    },
-    {
-      slug: "lap",
-      title: "Loan Against Property",
-      description: "Leverage your property's value to access higher loan values.",
-      href: "/loans/lap",
-      rate: "Starts 8-9.00% p.a.",
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-building"><rect width="16" height="20" x="4" y="2" rx="2" ry="2" /><path d="M9 22v-4h6v4" /><path d="M8 6h.01" /><path d="M16 6h.01" /><path d="M8 10h.01" /><path d="M16 10h.01" /><path d="M8 14h.01" /><path d="M16 14h.01" /></svg>
-      )
-    }
-  ];
+  const previewProducts = getPreviewLoans();
 
   return (
     <>
@@ -120,16 +80,18 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {previewProducts.map((prod) => (
               <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 flex flex-col" key={prod.slug}>
-                <div className="w-12 h-12 bg-primary-light text-primary rounded-lg flex items-center justify-center mb-6">{prod.icon}</div>
+                <div className="w-12 h-12 bg-primary-light text-primary rounded-lg flex items-center justify-center mb-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-landmark"><line x1="3" x2="21" y1="22" y2="22" /><line x1="6" x2="6" y1="18" y2="11" /><line x1="10" x2="10" y1="18" y2="11" /><line x1="14" x2="14" y1="18" y2="11" /><line x1="18" x2="18" y1="18" y2="11" /><path d="m12 2-9 5h18Z" /></svg>
+                </div>
                 <h3 className="text-lg font-bold mb-3 font-heading text-text-dark">{prod.title}</h3>
                 <p className="text-sm text-text-muted leading-relaxed mb-5 flex-grow">{prod.description}</p>
                 <ul className="list-none p-0 border-t border-gray-200 pt-4 mt-5 flex flex-col gap-2.5">
                   <li className="text-xs md:text-sm font-semibold text-text-medium flex items-center gap-2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-check text-accent-green"><polyline points="20 6 9 17 4 12" /></svg>
-                    {prod.rate}
+                    {prod.rateSummary}
                   </li>
                 </ul>
-                <Link href={prod.href} className="text-sm font-bold text-primary inline-flex items-center gap-1.5 hover:text-primary-dark transition-all mt-4 w-fit">
+                <Link href={`/loans/${prod.slug}`} className="text-sm font-bold text-primary inline-flex items-center gap-1.5 hover:text-primary-dark transition-all mt-4 w-fit">
                   View Details
                   <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-right"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
                 </Link>
@@ -138,7 +100,7 @@ export default function Home() {
           </div>
 
           <div className="text-center mt-12">
-            <Link href="/loans" className="inline-flex items-center justify-center gap-2 font-semibold text-primary border border-primary hover:bg-primary-light px-6 py-3 rounded-lg transition-all duration-200 text-sm cursor-pointer">Explore All 8 Loan Types</Link>
+            <Link href="/loans" className="inline-flex items-center justify-center gap-2 font-semibold text-primary border border-primary hover:bg-primary-light px-6 py-3 rounded-lg transition-all duration-200 text-sm cursor-pointer">Explore All Loan Types</Link>
           </div>
         </div>
       </section>
