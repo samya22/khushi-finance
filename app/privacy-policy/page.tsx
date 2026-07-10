@@ -34,7 +34,7 @@ export default function PrivacyPolicy() {
             <p className="text-sm md:text-base text-text-medium leading-relaxed mb-5">Our website utilizes standard session cookies to analyze web traffic trends, coordinate mobile drawer functionalities, and store basic numerical selections made inside our interactive EMI calculators.</p>
 
             <h2 className="text-lg md:text-xl font-bold font-heading text-text-dark mt-8 mb-4 border-b border-gray-100 pb-2">5. Contact Us</h2>
-            <p className="text-sm md:text-base text-text-medium leading-relaxed mb-5">If you have any questions regarding this Privacy Policy or wish to request data removal, please contact our compliance desk at <strong className="text-primary font-semibold">privacy@khushifinance.com</strong>.</p>
+            <p className="text-sm md:text-base text-text-medium leading-relaxed mb-5">If you have any questions regarding this Privacy Policy or wish to request data removal, please contact our compliance desk at <strong className="text-primary font-semibold">khushifinance18@gmail.com</strong>.</p>
           </div>
         </div>
       </section>

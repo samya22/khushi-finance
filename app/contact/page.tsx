@@ -50,7 +50,7 @@ export default function Contact() {
               </div>
               <div>
                 <h3 className="text-base md:text-lg font-bold text-text-dark font-heading mb-1">Corporate Inquiries</h3>
-                <p className="text-sm text-text-medium leading-relaxed">contact@khushifinance.com / support@khushifinance.com</p>
+                <p className="text-sm text-text-medium leading-relaxed">khushifinance18@gmail.com</p>
               </div>
             </div>
 
