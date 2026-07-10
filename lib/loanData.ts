@@ -87,7 +87,7 @@ const loanProducts: Record<string, LoanProduct> = {
     faqs: [
       {
         q: "What is the minimum credit score required for a Home Loan?",
-        a: "Generally, banks prefer a CIBIL credit score of 750 or above to access the lowest interest rates starting around 7.15% p.a.",
+        a: "Generally, banks prefer a CIBIL credit score of 700 or above to improve the chances of Home Loan approval and better interest rates.",
       },
       {
         q: "Can I transfer my active home loan to another bank?",

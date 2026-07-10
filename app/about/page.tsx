@@ -26,7 +26,7 @@ export default function About() {
           <div>
             <div className="inline-flex items-center gap-1.5 bg-primary-light text-primary text-xs md:text-sm font-bold px-3.5 py-1.5 rounded-full mb-5 w-fit">Our Story</div>
             <h2 className="text-2xl md:text-3xl font-bold font-heading text-text-dark mb-5 leading-tight">Aapki Khushi, Hamari Zimmedari</h2>
-            <p className="text-sm md:text-base text-text-medium leading-relaxed mb-4">Founded with the singular vision of bringing transparency back to borrowing, Khushi Finance has established itself as one of the most reliable loan advisory portals in India. Over the last decade, we have observed that borrowing from banks involves complex eligibility check cycles, obscure interest tables, and tedious paper handling.</p>
+            <p className="text-sm md:text-base text-text-medium leading-relaxed mb-4">Established in 2005, Khushi Finance has established itself as one of the most reliable loan advisory portals in India. Over the years, we have observed that borrowing from banks involves complex eligibility check cycles, obscure interest tables, and tedious paper handling.</p>
             <p className="text-sm md:text-base text-text-medium leading-relaxed mb-4">Our experienced loan consultants evaluate your credit file, structure financials, select matching loan packages, and interact directly with banks&apos; credit officers to accelerate processing. We help you skip the queuing and secure approvals with zero upfront charges.</p>
           </div>
 

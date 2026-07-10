@@ -15,7 +15,7 @@ export default function EmiCalculatorPage() {
             <li className="text-text-medium">EMI Calculator</li>
           </ul>
           <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight mb-3 text-text-dark font-heading">Interactive EMI Calculator</h1>
-          <p className="text-base text-text-medium max-w-2xl">Estimate your monthly payments, principal-interest breakdown, and review a year-by-year amortization schedule to plan your budgets.</p>
+          <p className="text-base text-text-medium max-w-2xl">Calculate your monthly EMI, view a detailed month-by-month repayment schedule, and download professional reports in Excel or PDF format.</p>
         </div>
       </section>
 
